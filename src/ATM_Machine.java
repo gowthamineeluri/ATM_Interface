@@ -62,6 +62,8 @@ public class ATM_Machine {
         int amount = take_amount();
         user.setAccountBalance(
                 user.getAccountBalance()+amount);
+        
+        System.out.println(amount+" rs. deposited into your account");
         atm_operations();
 
     }
@@ -75,6 +77,7 @@ public class ATM_Machine {
 
         user.setAccountBalance(
                 user.getAccountBalance()-amount);
+        System.out.println(amount+" rs. debited from your account");
         atm_operations();
     }
 
